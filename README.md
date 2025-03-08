@@ -1,40 +1,34 @@
 
-# Define 3.0
-The official template repository for Define 3.0
+# Aeternum : Define 3.0
 
 ![DefineHack 2025 Logo](https://github.com/user-attachments/assets/8173bc16-418e-4912-b500-c6427e4ba4b6)
 
+# < VedAyu >
 
 
-# < Project Name >
- Cover Image  If applicable
-
-### Team Information
-- **Team Name**: <Team Name> 
-- **Track**: < Track >
+### Team Information : 
+- **Team Name**: <Aeterum> 
+- **Track**: < AI in AYUSH >
 
 ### Team Members
 | Name | Role | GitHub | LinkedIn |
 |------|------|--------|----------|
-| [Full Name] | [Role] | [@username](https://github.com/username) | [Profile](https://linkedin.com/in/username) |
-| [Full Name] | [Role] | [@username](https://github.com/username) | [Profile](https://linkedin.com/in/username) |
-| [Full Name] | [Role] | [@username](https://github.com/username) | [Profile](https://linkedin.com/in/username) |
-| [Full Name] | [Role] | [@username](https://github.com/username) | [Profile](https://linkedin.com/in/username) |
+| [Chris Thomas Abraham] | [Role] | [@ChrisToms14](https://github.com/ChrisToms14) | [Chris Thomas Abraham](www.linkedin.com/in/
+ChrisThomasAbraham) |
+| [Krishna D S] | [Role] | [@Krishn543](https://github.com/Krishn543) | [Krishna Sivakumar](http://www.linkedin.com/in/krishna-sivakumar-bb6445308) |
+| [Midhun Eswar V L] | [Role] | [@Midhun6-tech](https://github.com/Midhun6-tech) | [Midhun Eswar](http://www.linkedin.com/in/midhun-eswar-a2a2b0306) |
+| [Vedha Mahadevan] | [Role] | [@Vedha17Mahadevan](https://github.com/Vedha17Mahadevan) | [Vedha Mahadevan](www.linkedin.com/in/vedhamahadevan) |
 
 ## Project Details
 
 ### Overview
-_A concise summary of your project (2-3 sentences)_
+This project uses AI to make AYUSH treatments more accessible and trustworthy. It will allow users to get reliable information and recommendations easily.  This solution will act as a bridge that connects the traditional medicine with modern technology to provide awareness and healthcare support.
 
 ### Problem Statement
-_Describe the problem your project aims to solve_
+Despite a growing interest in natural medicine and AYUSH based healthcare practices, most people, especially urban dwellers, lack proper knowledge and access to such credible and sustainable healthcare solutions preventing them form adopting these practices.
 
 ### Solution
-_Explain your approach to solving the problem_
-
-### Demo
-[![Project Demo](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
-_Replace VIDEO_ID with your YouTube video ID or provide an alternative demo link_
+We propose an AI-driven application that helps increase awareness and knowledge regarding AYUSH based medical practices offering personalized guidance and natural remedies for everyday health concerns. It also promotes overall wellness and sustainable healthcare, making natural healing accessible to all.
 
 ### Live Project
 [Project Name](https://your-project-url.com)
@@ -42,17 +36,18 @@ _Replace VIDEO_ID with your YouTube video ID or provide an alternative demo link
 ## Technical Implementation
 
 ### Technologies Used
-- **Frontend**: [Technologies]
-- **Backend**: [Technologies]
-- **Database**: [Technologies]
+- **Frontend**: HTML/CSS
+- **Backend**: Python
+- **Database**: MongoDB
 - **APIs**: [Technologies]
 - **DevOps**: [Technologies]
 - **Other Tools**: [Technologies]
 
 ### Key Features
-- Feature 1
-- Feature 2
-- Feature 3
+- AI chatbot
+- Wellness Section
+- Doctors' Directory
+- Kids Engagement
 
 ## Setup Instructions
 
@@ -89,10 +84,10 @@ _Share your vision for future development_
 ---
 
 ### Submission Checklist
-- [ ] Completed all sections of this README
+- [] Completed all sections of this README
 - [ ] Added project demo video
 - [ ] Provided live project link
-- [ ] Ensured all team members are listed
+- [✓] Ensured all team members are listed
 - [ ] Included setup instructions
 - [ ] Submitted final code to repository
 
