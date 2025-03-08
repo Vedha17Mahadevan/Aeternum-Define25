@@ -15,7 +15,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="wellness-services.html">Wellness Services</a></li>
-                <li><a href="vedika-chatbot.html">Vedica - Chatbot</a></li>
+                <li><a href="about-us.html">Mental Wellbeing</a></li>
+                <li><a href="https://278896e2c899059fb6.gradio.live">Vedica - Chatbot</a></li>
                 <li><a href="about-us.html">About Us</a></li>
             </ul>
         </nav>
@@ -85,12 +86,13 @@
             <div class="cta-content">
                 <h2>Empowering Health with AYUSH</h2>
                 <p>Your guide to holistic health with Ayurveda, Yoga, Unani, Siddha, and Homeopathy</p>
-                <a href="vedika-chatbot.html" class="btn primary-btn">Ask Vedika</a>
+                <a href="https://278896e2c899059fb6.gradio.live" class="btn primary-btn">Ask Vedica</a>
             </div>
         </div>
     </section>
 
     <section id="ayush-graphic" class="ayush-banner">
+        
         <div class="container">
             <img src="ayush 1.png" alt="AYUSH Disciplines" class="ayush-graphic">
         </div>
@@ -110,61 +112,77 @@
         </div>
     </section>
 
-    <section class="wellness-showcase">
+    <section class="wellness-check-section">
         <div class="container">
-            <h2>AYUSH Wellness Services</h2>
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-icon">
-                        <img src="ayurveda-icon.png" alt="Ayurveda">
+            <h2>Quick Wellness Assessment</h2>
+            <p>Take a moment to assess your current wellness with our AYUSH-based lifestyle check.</p>
+            <div class="wellness-check-widget">
+                <form id="quickWellnessForm">
+                    <div class="wellness-fields">
+                        <div class="wellness-field">
+                            <label for="sleep">Sleep Hours:</label>
+                            <select id="sleep">
+                                <option value="4">Less than 5</option>
+                                <option value="6">5-6 hours</option>
+                                <option value="8" selected>7-9 hours (Ideal)</option>
+                                <option value="10">More than 9</option>
+                            </select>
+                        </div>
+    
+                        <div class="wellness-field">
+                            <label for="water">Water Intake:</label>
+                            <select id="water">
+                                <option value="4">Less than 5 glasses</option>
+                                <option value="6">5-7 glasses</option>
+                                <option value="8" selected>8+ glasses (Ideal)</option>
+                            </select>
+                        </div>
+    
+                        <div class="wellness-field">
+                            <label for="activity">Daily Activity:</label>
+                            <select id="activity">
+                                <option value="10">Less than 15 mins</option>
+                                <option value="20">15-30 mins</option>
+                                <option value="40" selected>30+ mins (Ideal)</option>
+                            </select>
+                        </div>
+    
+                        <div class="wellness-field">
+                            <label for="diet">Diet Quality:</label>
+                            <select id="diet">
+                                <option value="1">Poor</option>
+                                <option value="2">Below Average</option>
+                                <option value="3">Average</option>
+                                <option value="4" selected>Good</option>
+                                <option value="5">Excellent</option>
+                            </select>
+                        </div>
+    
+                        <div class="wellness-field">
+                            <label for="stress">Stress Level:</label>
+                            <div class="stress-container">
+                                <input type="range" id="stress" min="1" max="10" value="5" oninput="updateStressValue(this.value)">
+                                <span id="stressValue">5</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Ayurveda Consultation</h3>
-                    <p>Personalized constitution analysis and treatment plans based on traditional Ayurvedic principles.</p>
-                    <a href="wellness-services.html#ayurveda" class="card-link">Learn More</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <img src="yoga-icon.png" alt="Yoga">
-                    </div>
-                    <h3>Yoga Sessions</h3>
-                    <p>Guided yoga practices for physical wellness, mental peace, and spiritual growth.</p>
-                    <a href="wellness-services.html#yoga" class="card-link">Learn More</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <img src="unani-icon.png" alt="Unani">
-                    </div>
-                    <h3>Unani Therapies</h3>
-                    <p>Natural treatments using herbs, minerals, and specialized techniques from Unani medicine.</p>
-                    <a href="wellness-services.html#unani" class="card-link">Learn More</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <img src="siddha-icon.png" alt="Siddha">
-                    </div>
-                    <h3>Siddha Remedies</h3>
-                    <p>Traditional South Indian medical system treatments for chronic and acute conditions.</p>
-                    <a href="wellness-services.html#siddha" class="card-link">Learn More</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <img src="homeopathy-icon.png" alt="Homeopathy">
-                    </div>
-                    <h3>Homeopathic Care</h3>
-                    <p>Gentle, individualized remedies that stimulate the body's own healing mechanisms.</p>
-                    <a href="wellness-services.html#homeopathy" class="card-link">Learn More</a>
-                </div>
+    
+                    <button type="submit" class="btn primary-btn">Check My Wellness</button>
+                </form>
+    
+                <div id="wellnessResult" class="wellness-result"></div>
             </div>
         </div>
     </section>
 
     <section class="vedika-preview">
+        
         <div class="container">
             <div class="vedika-content">
                 <div class="vedika-text">
                     <h2>Meet Vedica - Your AYUSH Wellness Assistant</h2>
                     <p>Have questions about AYUSH therapies, wellness practices, or which treatment might be right for you? Vedika is here to help with personalized guidance and information.</p>
-                    <a href="vedika-chatbot.html" class="btn primary-btn">Chat with Vedica</a>
+                    <a href="https://278896e2c899059fb6.gradio.live" class="btn primary-btn">Chat with Vedica</a>
                 </div>
                 <div class="vedika-image">
                     <img src="vedika-assistant.png" alt="Vedika Assistant">
@@ -193,7 +211,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="wellness-services.html">Services</a></li>
-                        <li><a href="vedika-chatbot.html">Vedica Chatbot</a></li>
+                        <li><a href="https://278896e2c899059fb6.gradio.live">Vedica Chatbot</a></li>
                         <li><a href="about-us.html">About Us</a></li>
                     </ul>
                 </div>
