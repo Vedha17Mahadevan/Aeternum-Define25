@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Display the result
             let resultDiv = document.getElementById("wellnessResult");
             resultDiv.innerHTML = `${resultText}
-            <a href="wellness-services.html" class="btn primary-btn">Explore AYUSH Practices</a>`;
+            <a href="https://www.nam.kerala.gov.in/" class="btn primary-btn">Explore AYUSH Practices</a>`;
             resultDiv.style.display = "block";
             resultDiv.className = "wellness-result " + resultClass;
             
@@ -241,3 +241,4 @@ function setupImageUpload() {
 
 // Call the initSlideshow function when the page loads
 document.addEventListener('DOMContentLoaded', initSlideshow);
+
