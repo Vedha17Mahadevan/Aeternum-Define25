@@ -126,6 +126,79 @@ function addNewSlide(imageSrc, title, description) {
     // Show the new slide
     showSlide(slides.length - 1);
 }
+// Function to update stress level value dynamically
+function updateStressValue(value) {
+    document.getElementById("stressValue").textContent = value;
+}
+
+// When DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Add event listener for the wellness form
+    const wellnessForm = document.getElementById("quickWellnessForm");
+    
+    if (wellnessForm) {
+        wellnessForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form reload
+
+            // Get user inputs
+            let sleep = parseInt(document.getElementById("sleep").value);
+            let water = parseInt(document.getElementById("water").value);
+            let activity = parseInt(document.getElementById("activity").value);
+            let diet = parseInt(document.getElementById("diet").value);
+            let stress = parseInt(document.getElementById("stress").value);
+
+            // Calculate wellness score
+            let score = 0;
+
+            // Sleep scoring
+            if (sleep == 8) score += 2;
+            else if (sleep == 6 || sleep == 10) score += 1;
+            else score -= 1;
+
+            // Water intake
+            if (water == 8) score += 2;
+            else if (water == 6) score += 1;
+            else score -= 1;
+
+            // Physical Activity
+            if (activity == 40) score += 2;
+            else if (activity == 20) score += 1;
+            else score -= 1;
+
+            // Diet Quality
+            score += (diet - 3);
+
+            // Stress Level (High stress = Lower score)
+            if (stress >= 8) score -= 2;
+            else if (stress >= 5) score -= 1;
+
+            // Generate feedback with AYUSH theming
+            let resultText = "";
+            let resultClass = "";
+            
+            if (score >= 6) {
+                resultText = "<strong>🌿 Excellent Balance!</strong><p>Your lifestyle aligns well with AYUSH principles. Continue nurturing your holistic well-being.</p>";
+                resultClass = "good";
+            } else if (score >= 3) {
+                resultText = "<strong>⚖ Moderate Harmony</strong><p>Consider incorporating more AYUSH practices to enhance your balance and wellness.</p>";
+                resultClass = "moderate";
+            } else {
+                resultText = "<strong>⚠ Seeking Balance</strong><p>Your AYUSH wellness needs attention. Small changes in diet, sleep, and activity can restore your natural balance.</p>";
+                resultClass = "needs-improvement";
+            }
+
+            // Display the result
+            let resultDiv = document.getElementById("wellnessResult");
+            resultDiv.innerHTML = `${resultText}
+            <a href="wellness-services.html" class="btn primary-btn">Explore AYUSH Practices</a>`;
+            resultDiv.style.display = "block";
+            resultDiv.className = "wellness-result " + resultClass;
+            
+            // Scroll to result
+            resultDiv.scrollIntoView({behavior: "smooth"});
+        });
+    }
+});
 
 // Setup image upload functionality
 function setupImageUpload() {
