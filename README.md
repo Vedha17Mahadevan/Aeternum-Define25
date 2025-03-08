@@ -7,7 +7,7 @@
 ![VedAyu Cover](Cover%20-%20Aeternum.png)
 
 ### Team Information : 
-- **Team Name**: Aeterum 
+- **Team Name**: Aeternum 
 - **Track**: AI in AYUSH 
 
 ### Team Members
