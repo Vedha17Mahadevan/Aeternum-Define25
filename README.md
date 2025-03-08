@@ -7,14 +7,13 @@
 ![VedAyu Cover](Cover%20-%20Aeternum.png)
 
 ### Team Information : 
-- **Team Name**: < Aeterum > 
-- **Track**: < AI in AYUSH >
+- **Team Name**: Aeterum 
+- **Track**: AI in AYUSH 
 
 ### Team Members
 | Name | Role | GitHub | LinkedIn |
 |------|------|--------|----------|
-| [Chris Thomas Abraham] | [Role] | [@ChrisToms14](https://github.com/ChrisToms14) | [Chris Thomas Abraham](www.linkedin.com/in/
-ChrisThomasAbraham) |
+| [Chris Thomas Abraham] | [Role] | [@ChrisToms14](https://github.com/ChrisToms14) | [Chris Thomas Abraham](www.linkedin.com/in/ChrisThomasAbraham) |
 | [Krishna D S] | [Role] | [@Krishn543](https://github.com/Krishn543) | [Krishna Sivakumar](http://www.linkedin.com/in/krishna-sivakumar-bb6445308) |
 | [Midhun Eswar V L] | [Role] | [@Midhun6-tech](https://github.com/Midhun6-tech) | [Midhun Eswar](http://www.linkedin.com/in/midhun-eswar-a2a2b0306) |
 | [Vedha Mahadevan] | [Role] | [@Vedha17Mahadevan](https://github.com/Vedha17Mahadevan) | [Vedha Mahadevan](www.linkedin.com/in/vedhamahadevan) |
