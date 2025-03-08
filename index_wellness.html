@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEDAYU - Yoga & Meditation Wellness</title>
+    <link rel="stylesheet" href="styles_wellness.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script defer src="script_wellness.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Group 4.png" alt="logo">
+        </div>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#yoga">Yoga</a></li>
+                <li><a href="#meditation">Meditation</a></li>
+                <li><a href="#mentalwellbeing">Mental Wellbeing</a></li>
+                <li><a href="#chatbot" class="cta-link">Vedika - Chatbot</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="intro" class="hero">
+        <div class="hero-content">
+            <h2>Discover the Healing Power of <span class="highlight">Yoga & Meditation</span></h2>
+            <p>Embrace ancient wisdom for modern wellness through AYUSH-approved practices</p>
+            <div class="cta-buttons">
+                <a href="#yoga" class="btn primary">Start Your Journey</a>
+                <a href="#chatbot" class="btn secondary">Ask Vedica - AI Assistant</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="yoga" class="card-section">
+        <div class="section-header">
+            <h2>Yoga <span class="accent">Asanas</span></h2>
+            <p>Explore traditional postures designed to bring harmony to body and mind</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-tag">Beginner</div>
+                <div class="card-video">
+                    <iframe src="https://www.youtube.com/embed/videoseries?list=PLRR-Y7wX83ksOFxJWKmPhxxpG1r0iru7P" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <h3>Foundation Poses</h3>
+                    <p>Perfect for beginners to build strength and flexibility safely</p>
+                    <a href="https://www.youtube.com/playlist?list=PLRR-Y7wX83ksOFxJWKmPhxxpG1r0iru7P" target="_blank">
+                        <button class="btn text">View Sequence</button>
+                    </a>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card-tag">Intermediate</div>
+                <div class="card-video">
+                    <iframe src="https://www.youtube.com/embed/playlist?list=PLRR-Y7wX83kuMymMpmrNzMs4GWGV713SQ&feature=shared" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <h3>Balancing Flow</h3>
+                    <p>Advance your practice with dynamic sequences and breath work</p>
+                    <a href="https://youtube.com/playlist?list=PLRR-Y7wX83kuMymMpmrNzMs4GWGV713SQ&feature=shared" target="_blank">
+                        <button class="btn text">View Sequence</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag">Advanced</div>
+                <div class="card-video">
+                    <iframe src="https://www.youtube.com/embed/playlist?list=PLRR-Y7wX83ktZnITgjRzl9v_8BaYRMDf-&feature=shared" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <h3>Power Vinyasa</h3>
+                    <p>Challenge yourself with complex poses and sustained flows</p>
+                    <a href="https://youtube.com/playlist?list=PLRR-Y7wX83ktZnITgjRzl9v_8BaYRMDf-&feature=shared" target="_blank">
+                        <button class="btn text">View Sequence</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="meditation" class="card-section accent-bg">
+        <div class="section-header light">
+            <h2>Meditation <span class="accent">& Mindfulness</span></h2>
+            <p> Calm your mind and cultivate inner peace with guided sessions</p>
+        </div>
+        <div class="grid two-column">
+            <div class="card">
+                <div class="card-tag">Guided</div>
+                <div class="card-video">
+                    <iframe src="https://www.youtube.com/embed/playlist?list=PLe1px9-uNQTo8hiWHddvMkUMZ_RFlqNW6&feature=shared" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <h3>Chakra Balancing</h3>
+                    <p> 30-minute guided meditation to align your energy centers </p>
+                    <a href="https://youtube.com/playlist?list=PLe1px9-uNQTo8hiWHddvMkUMZ_RFlqNW6&feature=shared" target="_blank">
+                        <button class="btn text">View Sequence</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag">Audio</div>
+                <div class="card-content meditation-music">
+                    <img src="hm.jpg" alt="Healing Sounds" class="meditation-image">
+                    <i class="fas fa-music meditation-icon"></i>
+                    <h3>Healing Sounds</h3>
+                    <p> Immerse yourself in soothing sounds designed to induce deep relaxation </p>
+                    <button class="btn primary" onclick="openCalmMusic()">Listen Now</button>
+                </div>            
+        </div>
+    </section>
+    
+    <section id="chatbot" class="guru-section">
+        <div class="guru-container">
+            <div class="guru-image">
+                <img src="https://via.placeholder.com/500" alt="Wellness Guru">
+            </div>
+            <div class="guru-content">
+                <h2>Ask <span class="accent">Vedica - Our AI Assitant</span></h2>
+                <p>Get personalized wellness advice, yoga recommendations, and meditation guidance from our AI-powered assistant</p>
+                <button class="btn primary pulse" onclick="openChatbot()">
+                    <i class="fas fa-comment-dots"></i> Start a Conversation
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo">
+                    <img src="Group 4.png" alt="logo">
+                </div>
+                <p>Ancient wisdom for modern wellness</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#yoga">Yoga Practices</a></li>
+                    <li><a href="#meditation">Meditation Guide</a></li>
+                    <li><a href="#mentalwellbeing">Mental Wellbeing</a></li>
+                    <li><a href="#chatbot">Wellness Assistant : Vedica</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 VEDAYU Wellness. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
