@@ -7187,7 +7187,38 @@ nav ul li a:hover::after {
     transform: scale(1.2);
 }
 
+/* Slide upload admin */
+.slide-admin {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
 
+.upload-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background: rgba(0, 77, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+    background: rgba(0, 77, 0, 1);
+}
+
+.upload-preview {
+    margin-top: 10px;
+    max-width: 120px;
+}
+
+.upload-preview img {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid white;
+}
 
 /* CTA Banner */
 .cta-banner {
@@ -7256,73 +7287,175 @@ nav ul li a:hover::after {
     padding-left: 5px;
 }
 
-/* Wellness Showcase */
-.wellness-showcase {
-    padding: 70px 0;
-    background-color: #f9f9f2;
+/* Wellness Check Section Styles */
+.wellness-check-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #d4f0e0 0%, #ffffff 100%);
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex: 1 1 250px;
-    max-width: 300px;
+.wellness-check-section h2 {
+    color: #1a7a43;
     text-align: center;
+    margin-bottom: 15px;
+}
+
+.wellness-check-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wellness-check-widget {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.wellness-check-widget::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #1a7a43;
+}
+
+.wellness-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.wellness-field {
     display: flex;
     flex-direction: column;
+}
+
+.wellness-field label {
+    font-weight: bold;
+    color: #0c5a2e;
+    margin-bottom: 8px;
+}
+
+.wellness-field select, 
+.wellness-field input[type="range"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d4f0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.wellness-field select:focus {
+    border-color: #1a7a43;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(26, 122, 67, 0.2);
+}
+
+.wellness-field input[type="range"] {
+    -webkit-appearance: none;
+    height: 10px;
+    background: #d4f0e0;
+    border: none;
+    padding: 0;
+}
+
+.wellness-field input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #1a7a43;
+    cursor: pointer;
+}
+
+.wellness-field input[type="range"]::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #1a7a43;
+    cursor: pointer;
+}
+
+.stress-container {
+    display: flex;
     align-items: center;
+    gap: 15px;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.card-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
+#stressValue {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #1a7a43;
+    color: white;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
 }
 
-.card-icon img {
-    width: 100%;
-    height: auto;
+#quickWellnessForm .btn {
+    display: block;
+    margin: 0 auto;
+    min-width: 200px;
 }
 
-.card h3 {
-    color: #004d00;
-    margin-bottom: 15px;
-    font-size: 1.4rem;
+.wellness-result {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #d4f0e0;
+    text-align: center;
+    font-size: 18px;
+    display: none;
 }
 
-.card p {
+.wellness-result p {
     margin-bottom: 20px;
-    flex-grow: 1;
+    line-height: 1.6;
 }
 
-.card-link {
-    color: #004d00;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    padding-bottom: 3px;
+.wellness-result .btn {
+    display: inline-block;
 }
 
-.card-link:hover {
-    border-bottom-color: #004d00;
+.wellness-result.good {
+    background-color: #d4f0e0;
+    border-left: 5px solid #1a7a43;
+}
+
+.wellness-result.moderate {
+    background-color: #fff2d4;
+    border-left: 5px solid #e6a90e;
+}
+
+.wellness-result.needs-improvement {
+    background-color: #ffe8e8;
+    border-left: 5px solid #d85656;
+}
+
+@media (max-width: 768px) {
+    .wellness-fields {
+        grid-template-columns: 1fr;
+    }
+    
+    .wellness-check-widget {
+        padding: 20px;
+    }
 }
 
 /* Vedika Preview Section */
