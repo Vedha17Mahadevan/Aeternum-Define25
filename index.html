@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEDAYU - AYUSH Wellness Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Group 4.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wellness-services.html">Wellness Services</a></li>
+                <li><a href="about-us.html">Mental Wellbeing</a></li>
+                <li><a href="https://278896e2c899059fb6.gradio.live">Vedica - Chatbot</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="Ayurveda.jpg" alt="Ayurveda">
+                <div class="hero-text">
+                    <h2>Ayurveda</h2>
+                    <p>Ancient wisdom for holistic healing and balance</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="yoga.png" alt="Yoga">
+                <div class="hero-text">
+                    <h2>Yoga</h2>
+                    <p>Mind-body wellness and spiritual balance</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="cupbowl.png" alt="Unani">
+                <div class="hero-text">
+                    <h2>Unani</h2>
+                    <p>Traditional Persian medicine for natural healing</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="acupuncture.png" alt="Siddha">
+                <div class="hero-text">
+                    <h2>Siddha</h2>
+                    <p>Natural therapies and spiritual healing</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="home.jpeg" alt="Homeopathy">
+                <div class="hero-text">
+                    <h2>Homeopathy</h2>
+                    <p>Alternative medicine with gentle remedies</p>
+                </div>
+            </div>
+            
+            <div class="slide-controls">
+                <button class="control-btn" id="prev-btn">❮</button>
+                <button class="control-btn" id="next-btn">❯</button>
+            </div>
+        </div>
+
+        <div class="slide-indicators">
+            <span class="dot" data-slide="0"></span> 
+            <span class="dot" data-slide="1"></span> 
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+        </div>
+        
+        
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Empowering Health with AYUSH</h2>
+                <p>Your guide to holistic health with Ayurveda, Yoga, Unani, Siddha, and Homeopathy</p>
+                <a href="https://278896e2c899059fb6.gradio.live" class="btn primary-btn">Ask Vedica</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="ayush-graphic" class="ayush-banner">
+        
+        <div class="container">
+            <img src="ayush 1.png" alt="AYUSH Disciplines" class="ayush-graphic">
+        </div>
+    </section>
+
+    <section id="vision" class="vision-section">
+        <div class="container">
+            <h2>VISION</h2>
+            <div class="vision-content">
+                <ol>
+                    <li>To provide cost-effective and equitable AYUSH health care throughout the country by improving access to the services.</li>
+                    <li>To strengthen preventive and promotive aspects in primary health care.</li>
+                    <li>To provide services of a holistic wellness model based on AYUSH principles and practices.</li>
+                    <li>To improve AYUSH educational institutions for imparting quality education.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="wellness-check-section">
+        <div class="container">
+            <h2>Quick Wellness Assessment</h2>
+            <p>Take a moment to assess your current wellness with our AYUSH-based lifestyle check.</p>
+            <div class="wellness-check-widget">
+                <form id="quickWellnessForm">
+                    <div class="wellness-fields">
+                        <div class="wellness-field">
+                            <label for="sleep">Sleep Hours:</label>
+                            <select id="sleep">
+                                <option value="4">Less than 5</option>
+                                <option value="6">5-6 hours</option>
+                                <option value="8" selected>7-9 hours (Ideal)</option>
+                                <option value="10">More than 9</option>
+                            </select>
+                        </div>
+    
+                        <div class="wellness-field">
+                            <label for="water">Water Intake:</label>
+                            <select id="water">
+                                <option value="4">Less than 5 glasses</option>
+                                <option value="6">5-7 glasses</option>
+                                <option value="8" selected>8+ glasses (Ideal)</option>
+                            </select>
+                        </div>
+    
+                        <div class="wellness-field">
+                            <label for="activity">Daily Activity:</label>
+                            <select id="activity">
+                                <option value="10">Less than 15 mins</option>
+                                <option value="20">15-30 mins</option>
+                                <option value="40" selected>30+ mins (Ideal)</option>
+                            </select>
+                        </div>
+    
+                        <div class="wellness-field">
+                            <label for="diet">Diet Quality:</label>
+                            <select id="diet">
+                                <option value="1">Poor</option>
+                                <option value="2">Below Average</option>
+                                <option value="3">Average</option>
+                                <option value="4" selected>Good</option>
+                                <option value="5">Excellent</option>
+                            </select>
+                        </div>
+    
+                        <div class="wellness-field">
+                            <label for="stress">Stress Level:</label>
+                            <div class="stress-container">
+                                <input type="range" id="stress" min="1" max="10" value="5" oninput="updateStressValue(this.value)">
+                                <span id="stressValue">5</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <button type="submit" class="btn primary-btn">Check My Wellness</button>
+                </form>
+    
+                <div id="wellnessResult" class="wellness-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vedika-preview">
+        
+        <div class="container">
+            <div class="vedika-content">
+                <div class="vedika-text">
+                    <h2>Meet Vedica - Your AYUSH Wellness Assistant</h2>
+                    <p>Have questions about AYUSH therapies, wellness practices, or which treatment might be right for you? Vedika is here to help with personalized guidance and information.</p>
+                    <a href="https://278896e2c899059fb6.gradio.live" class="btn primary-btn">Chat with Vedica</a>
+                </div>
+                <div class="vedika-image">
+                    <img src="vedika-assistant.png" alt="Vedika Assistant">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-preview">
+        <div class="container">
+            <h2>About VEDAYU</h2>
+            <p>VEDAYU is dedicated to promoting the traditional Indian systems of medicine through modern digital platforms. Our mission is to make AYUSH therapies accessible, understandable, and integrated with contemporary wellness practices.</p>
+            <a href="about-us.html" class="btn secondary-btn">Learn More About Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>VEDAYU</h3>
+                    <p>Promoting holistic wellness through AYUSH systems</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="wellness-services.html">Services</a></li>
+                        <li><a href="https://278896e2c899059fb6.gradio.live">Vedica Chatbot</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Email: info@vedayu.org</p>
+                    <p>Phone: +91 1234567890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VEDAYU - AYUSH Wellness Portal. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
