@@ -4,7 +4,7 @@
 ![DefineHack 2025 Logo](https://github.com/user-attachments/assets/8173bc16-418e-4912-b500-c6427e4ba4b6)
 
 # VedAyu
-![][Cover - Aeternum.png]
+![VedAyu Cover](Cover%20-%20Aeternum.png)
 
 ### Team Information : 
 - **Team Name**: <Aeterum> 
