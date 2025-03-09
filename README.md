@@ -30,7 +30,7 @@ Despite a growing interest in natural medicine and AYUSH based healthcare practi
 We propose an AI-driven application that helps increase awareness and knowledge regarding AYUSH based medical practices offering personalized guidance and natural remedies for everyday health concerns. It also promotes overall wellness and sustainable healthcare, making natural healing accessible to all.
 
 ### Demo Video
-VedAyu : in progress... (https://your-project-url.com)
+VedAyu : [VideoProof](https://drive.google.com/file/d/1yXZE4gYjZld_SHjv9f2Y2JIBtoTfflsD/view?usp=sharing)
 
 ### Live Project
 VedAyu : [Website_link](https://ved-ayu-aeternum-define-3-0-8qr3.vercel.app/index.html)
