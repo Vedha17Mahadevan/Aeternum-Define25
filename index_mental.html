@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Wellbeing</title>
+    <link rel="stylesheet" href="styles_mental.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="Group 4.png" alt="logo">
+        </div>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index_wellness.html">Wellness</a></li>
+                <li><a href="#bubble-game">Games</a></li>
+                <li><a href="#breathing-exercise">Breathing</a></li>
+                <li><a href="https://5102caf10e32296c51.gradio.live/" class="cta-link">Vedica - Chatbot</a></li>
+                <li><a href="index.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section img src="img1.jpg" alt="Mental Wellbeing" class="hero">
+        <div class="hero-content">
+            <h2>Nurture Your <span class="highlight">Mental Wellbeing</span></h2>
+            <p>Interactive tools and resources to help you manage stress, track your mood, and find your inner calm.</p>
+            <div class="cta-buttons">
+                <a href="#breathing-exercise" class="btn secondary">Start Breathing</a>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Play & Unwind (Bubble Popper Game) -->
+    <section id="bubble-game" class="card-section accent-bg">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Bubble Bliss: Pop Your Stress Away!</h2>
+                <p>A simple yet effective way to release tension and focus on the present moment.</p>
+            </div>
+            <div class="card">
+                <div class="card-content game-content">
+                    <button id="start-bubble-game" class="btn primary pulse">Start Game</button>
+                    <p id="bubble-score">Score: 0</p>
+                    <p>Click on the bubbles as they float up to pop them and release your stress!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breathing Exercise -->
+    <section id="breathing-exercise" class="card-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Breathe Easy: Guided Relaxation</h2>
+                <p>Follow our guided breathing exercise to help calm your mind and reduce anxiety.</p>
+            </div>
+            <div class="grid two-column">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>4-7-8 Breathing Technique</h3>
+                        <p>This technique can help reduce anxiety, help you fall asleep, and manage cravings.</p>
+                        <p id="breathing-instruction">Follow the guided breathing animation</p>
+                        <button id="breathe-btn" onclick="startBreathing()" class="btn secondary">Start Breathing</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content breathing-container">
+                        <div id="breathing-animation"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot / Guru Section -->
+    <section id="chatbot" class="guru-section">
+        <div class="guru-container">
+            <div class="guru-image">
+                <img src="bot.png" alt="Vedica - AI Wellness Guide">
+            </div>
+            <div class="guru-content">
+                <h2>Chat with Vedica</h2>
+                <p>Vedica is your AI wellness companion, ready to listen, guide, and support you through your mental wellbeing journey.</p>
+                <p>Whether you need someone to talk to, advice on stress management, or mindfulness tips, Vedica is here for you 24/7.</p>
+                <button id="chat-button" class="btn primary">Start a Conversation</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="Group 4.png" alt="logo">
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#bubble-game">Bubble Game</a></li>
+                    <li><a href="#breathing-exercise">Breathing Exercise</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ministryofayush/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCqRR2gs-I3zrNcE4so4TpgQ"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/moayush/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/moayush"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Mental Wellbeing Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Basic JavaScript for functionality  
+        // Bubble Game
+        document.getElementById('start-bubble-game').addEventListener('click', startBubbleGame);
+        
+        let gameRunning = false;
+        let gameScore = 0;
+        
+        function startBubbleGame() {
+            if (gameRunning) return;
+            
+            gameRunning = true;
+            gameScore = 0;
+            document.getElementById('bubble-score').textContent = "Score: 0";
+            document.getElementById('start-bubble-game').textContent = "Game Running";
+            
+            const bubbleInterval = setInterval(() => {
+                if (!gameRunning) {
+                    clearInterval(bubbleInterval);
+                    return;
+                }
+                
+                createBubble();
+            }, 1000);
+            
+            // End game after 60 seconds
+            setTimeout(() => {
+                gameRunning = false;
+                document.getElementById('start-bubble-game').textContent = "Start Game";
+                clearInterval(bubbleInterval);
+                
+                // Remove any remaining bubbles
+                document.querySelectorAll('.bubble').forEach(bubble => {
+                    bubble.remove();
+                });
+                
+                alert("Game over! Your final score: " + gameScore);
+            }, 30000);
+        }
+        
+        function createBubble() {
+            const bubble = document.createElement('div');
+            bubble.classList.add('bubble');
+            
+            // Set random horizontal position
+            const posX = Math.random() * (window.innerWidth - 40);
+            bubble.style.left = posX + 'px';
+            
+            // Add bubble to document
+            document.body.appendChild(bubble);
+            
+            // Add click event to pop bubble
+            bubble.addEventListener('click', () => {
+                bubble.remove();
+                gameScore++;
+                document.getElementById('bubble-score').textContent = "Score: " + gameScore;
+            });
+            
+            // Remove bubble after animation completes
+            setTimeout(() => {
+                if (bubble.parentNode) {
+                    bubble.remove();
+                }
+            }, 5000);
+        }
+        
+        // Breathing Exercise
+        let breathingInterval;
+        
+        function startBreathing() {
+            const breatheBtn = document.getElementById('breathe-btn');
+            const breathingAnimation = document.getElementById('breathing-animation');
+            const instruction = document.getElementById('breathing-instruction');
+            
+            if (breatheBtn.textContent === "Start Breathing") {
+                breatheBtn.textContent = "Stop";
+                
+                // Start the breathing cycle
+                breathingCycle();
+                breathingInterval = setInterval(breathingCycle, 19000);  // 4s inhale + 7s hold + 8s exhale
+            } else {
+                breatheBtn.textContent = "Start Breathing";
+                clearInterval(breathingInterval);
+                instruction.textContent = "Follow the guided breathing animation";
+                breathingAnimation.classList.remove('breathing-expand', 'breathing-contract');
+            }
+        }
+        
+        function breathingCycle() {
+            const breathingAnimation = document.getElementById('breathing-animation');
+            const instruction = document.getElementById('breathing-instruction');
+            
+            // Inhale phase
+            instruction.textContent = "Inhale through your nose for 4 seconds";
+            breathingAnimation.classList.add('breathing-expand');
+            breathingAnimation.classList.remove('breathing-contract');
+            
+            // Hold phase
+            setTimeout(() => {
+                instruction.textContent = "Hold your breath for 7 seconds";
+            }, 4000);
+            
+            // Exhale phase
+            setTimeout(() => {
+                instruction.textContent = "Exhale through your mouth for 8 seconds";
+                breathingAnimation.classList.remove('breathing-expand');
+                breathingAnimation.classList.add('breathing-contract');
+            }, 11000);
+        }
+        
+        // Chat Button
+        document.getElementById('chat-button').addEventListener('click', function() {
+            window.open('https://5102caf10e32296c51.gradio.live/', '_blank');
+        });
+    </script>
+</body>
+</html>
