@@ -13,10 +13,10 @@
 ### Team Members
 | Name | Role | GitHub | LinkedIn |
 |------|------|--------|----------|
-| Chris Thomas Abraham | [WebDeveloper & Designer] | [@ChrisToms14](https://github.com/ChrisToms14) | [Chris Thomas Abraham](https://www.linkedin.com/in/ChrisThomasAbraham) |
-| Krishna D S | [Bot Developer] | [@Krishn543](https://github.com/Krishn543) | [Krishna Sivakumar](http://www.linkedin.com/in/krishna-sivakumar-bb6445308) |
-| Midhun Eswar V L | [Bot Developer] | [@Midhun6-tech](https://github.com/Midhun6-tech) | [Midhun Eswar](http://www.linkedin.com/in/midhun-eswar-a2a2b0306) |
-| Vedha Mahadevan | [WebDeveloper] | [@Vedha17Mahadevan](https://github.com/Vedha17Mahadevan) | [Vedha Mahadevan](http://www.linkedin.com/in/vedha-mahadevan) |
+| Chris Thomas Abraham | WebDeveloper & Designer | [@ChrisToms14](https://github.com/ChrisToms14) | [Chris Thomas Abraham](https://www.linkedin.com/in/ChrisThomasAbraham) |
+| Krishna D S | Bot Developer | [@Krishn543](https://github.com/Krishn543) | [Krishna Sivakumar](http://www.linkedin.com/in/krishna-sivakumar-bb6445308) |
+| Midhun Eswar V L | Bot Developer | [@Midhun6-tech](https://github.com/Midhun6-tech) | [Midhun Eswar](http://www.linkedin.com/in/midhun-eswar-a2a2b0306) |
+| Vedha Mahadevan | WebDeveloper | [@Vedha17Mahadevan](https://github.com/Vedha17Mahadevan) | [Vedha Mahadevan](http://www.linkedin.com/in/vedha-mahadevan) |
 
 ## Project Details
 
@@ -33,7 +33,7 @@ We propose an AI-driven application that helps increase awareness and knowledge 
 VedAyu : in progress... (https://your-project-url.com)
 
 ### Live Project
-VedAyu : in progress... (https://your-project-url.com)
+VedAyu : [Website_link](https://ved-ayu-aeternum-define-3-0-8qr3.vercel.app/index.html)
 
 ## Technical Implementation
 
@@ -43,7 +43,7 @@ VedAyu : in progress... (https://your-project-url.com)
 - **Database**: N.A
 - **APIs**: GroqCloud
 - **DevOps**: N.A
-- **Other Tools**: N.A
+- **Other Tools**: Vercal , GitHUb (Hosting)
 
 ### Key Features
 - AI chatbot
@@ -92,11 +92,9 @@ http://localhost:8000
 - Final Touches: After integration, we prepared for the presentation, refined the project, and made necessary adjustments.
 
 ### Challenges Faced
--AI Chatbot: Building an intelligent chatbot was challenging, but we used GroqCloud's API for seamless integration and accurate responses.
--UI Design: Creating a responsive, user-friendly interface was tough, but HTML/CSS frameworks helped streamline the process.
--Chatbot Integration: Ensuring smooth interaction between the chatbot and website was tricky, but we achieved it with careful backend and frontend integration.
-
-
+- AI Chatbot: Building an intelligent chatbot was challenging, but we used GroqCloud's API for seamless integration and accurate responses.
+- UI Design: Creating a responsive, user-friendly interface was tough, but HTML/CSS frameworks helped streamline the process.
+- Chatbot Integration: Ensuring smooth interaction between the chatbot and website was tricky, but we achieved it with careful backend and frontend integration.
 
 ### Future Enhancements
 - Database Integration: Adding a database to store user preferences and health records.
