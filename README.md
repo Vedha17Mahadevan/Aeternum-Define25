@@ -13,10 +13,10 @@
 ### Team Members
 | Name | Role | GitHub | LinkedIn |
 |------|------|--------|----------|
-| Chris Thomas Abraham | [Role] | [@ChrisToms14](https://github.com/ChrisToms14) | [Chris Thomas Abraham](https://www.linkedin.com/in/ChrisThomasAbraham) |
-| Krishna D S | [Role] | [@Krishn543](https://github.com/Krishn543) | [Krishna Sivakumar](http://www.linkedin.com/in/krishna-sivakumar-bb6445308) |
-| Midhun Eswar V L | [Role] | [@Midhun6-tech](https://github.com/Midhun6-tech) | [Midhun Eswar](http://www.linkedin.com/in/midhun-eswar-a2a2b0306) |
-| Vedha Mahadevan | [Role] | [@Vedha17Mahadevan](https://github.com/Vedha17Mahadevan) | [Vedha Mahadevan](http://www.linkedin.com/in/vedha-mahadevan) |
+| Chris Thomas Abraham | [WebDeveloper & Designer] | [@ChrisToms14](https://github.com/ChrisToms14) | [Chris Thomas Abraham](https://www.linkedin.com/in/ChrisThomasAbraham) |
+| Krishna D S | [Bot Developer] | [@Krishn543](https://github.com/Krishn543) | [Krishna Sivakumar](http://www.linkedin.com/in/krishna-sivakumar-bb6445308) |
+| Midhun Eswar V L | [Bot Developer] | [@Midhun6-tech](https://github.com/Midhun6-tech) | [Midhun Eswar](http://www.linkedin.com/in/midhun-eswar-a2a2b0306) |
+| Vedha Mahadevan | [WebDeveloper] | [@Vedha17Mahadevan](https://github.com/Vedha17Mahadevan) | [Vedha Mahadevan](http://www.linkedin.com/in/vedha-mahadevan) |
 
 ## Project Details
 
@@ -29,31 +29,33 @@ Despite a growing interest in natural medicine and AYUSH based healthcare practi
 ### Solution
 We propose an AI-driven application that helps increase awareness and knowledge regarding AYUSH based medical practices offering personalized guidance and natural remedies for everyday health concerns. It also promotes overall wellness and sustainable healthcare, making natural healing accessible to all.
 
+### Demo Video
+VedAyu : in progress... (https://your-project-url.com)
+
 ### Live Project
-[Project Name](https://your-project-url.com)
+VedAyu : in progress... (https://your-project-url.com)
 
 ## Technical Implementation
 
 ### Technologies Used
 - **Frontend**: HTML/CSS
-- **Backend**: Python
-- **Database**: MongoDB
-- **APIs**: [Technologies]
-- **DevOps**: [Technologies]
-- **Other Tools**: [Technologies]
+- **Backend**: Python/JS
+- **Database**: N.A
+- **APIs**: GroqCloud
+- **DevOps**: N.A
+- **Other Tools**: N.A
 
 ### Key Features
 - AI chatbot
 - Wellness Section
-- Doctors' Directory
-- Kids Engagement
+- Mental Wellness Section
 
 ## Setup Instructions
 
 ### Prerequisites
-- Requirement 1
-- Requirement 2
-- Requirement 3
+- Basic knowledge of HTML, CSS, JavaScript, and Python
+- Internet connection
+- Understanding GroqCloud API integration
 
 ### Installation 
 ```bash
@@ -68,25 +70,35 @@ We propose an AI-driven application that helps increase awareness and knowledge 
 ## Additional Resources
 
 ### Project Timeline
-_Brief overview of your development process and milestones_
+- Planning: We spent the first hour brainstorming and consolidating our ideas, defining the scope of the project and objectives.
+- Task Distribution: The team split into two groups: one focused on bot development and the other on web development, with the target to complete both simultaneously.
+- Integration: Once the development was completed, we focused on integrating the chatbot and the website smoothly.
+- Final Touches: After integration, we prepared for the presentation, refined the project, and made necessary adjustments.
 
 ### Challenges Faced
-_Discuss technical challenges and how you overcame them_
+-AI Chatbot: Building an intelligent chatbot was challenging, but we used GroqCloud's API for seamless integration and accurate responses.
+-UI Design: Creating a responsive, user-friendly interface was tough, but HTML/CSS frameworks helped streamline the process.
+-Chatbot Integration: Ensuring smooth interaction between the chatbot and website was tricky, but we achieved it with careful backend and frontend integration.
+
+
 
 ### Future Enhancements
-_Share your vision for future development_
+- Database Integration: Adding a database to store user preferences and health records.
+- Advanced AI: Expanding the AI capabilities to include personalized health tracking and wellness suggestions.
+- Mobile App Version: Developing a mobile app for easier access and interaction on mobile devices.
+
 
 ### References (if any)
-- [Reference 1](link)
-- [Reference 2](link)
+- [National AYUSH Mission Kerala](https://www.nam.kerala.gov.in/)
+- [GroqCloud API Documentation](https://console.groq.com/login)
+- [Ministry of AYUSH](https://ayush.gov.in/)
 
----
 
 ### Submission Checklist
 - [ ] Completed all sections of this README
 - [ ] Added project demo video
 - [ ] Provided live project link
-- [] Ensured all team members are listed
+- Ensured all team members are listed
 - [ ] Included setup instructions
 - [ ] Submitted final code to repository
 
