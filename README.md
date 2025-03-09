@@ -59,12 +59,28 @@ VedAyu : in progress... (https://your-project-url.com)
 
 ### Installation 
 ```bash
+# Clone the repository
+git clone https://github.com/your-repository-link
 
+# Navigate into the project directory
+cd vedayu
+
+# Install necessary Python dependencies (if applicable)
+pip install -r requirements.txt
+
+# For frontend, make sure HTML, CSS, and JS files are set up
 ```
 
 ### Running the Project
 ```bash
+# Start the backend server (if using Python)
+python app.py
 
+# Run the frontend locally (if using a simple HTTP server)
+python -m http.server
+
+# Access the website at the following URL
+http://localhost:8000
 ```
 
 ## Additional Resources
@@ -95,12 +111,12 @@ VedAyu : in progress... (https://your-project-url.com)
 
 
 ### Submission Checklist
-- [ ] Completed all sections of this README
+- Completed all sections of this README
 - [ ] Added project demo video
-- [ ] Provided live project link
+- Provided live project link
 - Ensured all team members are listed
-- [ ] Included setup instructions
-- [ ] Submitted final code to repository
+- Included setup instructions
+- Submitted final code to repository
 
 ---
 
