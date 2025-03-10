@@ -77,7 +77,7 @@ function openChatbot() {
     
     // Wait for animation to finish before redirecting
     setTimeout(() => {
-        window.location.href = "https://135dea75e74816e680.gradio.live/";  // Replace with actual chatbot URL
+        window.location.href = "https://afa2c21279b7b06950.gradio.live";  // Replace with actual chatbot URL
     }, 500);
 }
 
